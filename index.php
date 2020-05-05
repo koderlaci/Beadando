@@ -4,6 +4,8 @@
 	<title></title>
 </head>
 <body>
-
+	<?php
+	echo 'Valami'
+	?>
 </body>
 </html>
