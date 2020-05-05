@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
+	<head>
+		<title>HAL</title>
+	</head>
+	<body>
 	<?php
-	echo 'Valami'
+	echo "Valami";
 	?>
-</body>
+	</body>
 </html>
