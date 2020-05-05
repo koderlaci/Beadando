@@ -1,11 +1,12 @@
+<?php
+	$hal = "hal";
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>HAL</title>
 	</head>
 	<body>
-	<?php
-	echo "Valami";
-	?>
+		<input type="button" value="<?php echo $hal; ?>" />
 	</body>
 </html>
