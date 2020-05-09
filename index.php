@@ -11,6 +11,7 @@
 	<body>
 		<input type="button" value="<?php echo $hal; ?>" />
 			<div class="page">
+				<templ> <?php include_once "templ.php"; ?></templ>
 				<header> <?php include_once "protected/header.php"; ?></header>
 				<nav><?php require_once "protected/nav.php"; ?></nav>
 				<content><?php require_once "protected/content.php"; ?></content>

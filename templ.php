@@ -11,5 +11,13 @@
 			<li><a href="#">Hírek</a></li>
 			<li><a href="#">Játék</a></li>
 			<li><a href="#">Regisztráció</a></li>
+		</ul>
+	</nav>
+
+	<div id="content">
+	</div>
+
+	<div id="sidebar">
+	</div>
 </body>
 </html>
