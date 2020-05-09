@@ -9,13 +9,11 @@
 		<title>HAL</title>
 	</head>
 	<body>
-		<input type="button" value="<?php echo $hal; ?>" />
-			<div class="page">
-				<templ> <?php include_once "templ.php"; ?></templ>
-				<header> <?php include_once "protected/header.php"; ?></header>
-				<nav><?php require_once "protected/nav.php"; ?></nav>
-				<content><?php require_once "protected/content.php"; ?></content>
-				<footer><?php include_once "protected/footer.php"; ?></footer>
-			</div>
+		<?php include_once "protected/header.php"; ?>
+		<?php require_once "protected/nav.php"; ?>
+		<?php require_once "protected/content.php"; ?>
+		<?php include_once "protected/footer.php"; ?>
+		<?php require_once "protected/config.php"; ?>
+		<?php require_once "protected/database.php"; ?>
 	</body>
 </html>
