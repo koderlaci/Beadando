@@ -6,10 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="public/Style.css" />
 </head>
 <body>
-	<nav id="navigation">
-		<ul id="nav">
+	<nav id="nav1">
+		<ul id="navi1">
 			<li><a href="index.php">Főoldal</a></li>
 			<li><a href="#">Hírek</a></li>
+			<li><a href="#">Játék</a></li>
+			<li><a href="#">GYIK</a></li>
+		</ul>
+	</nav>
+
+	<nav id="nav2">
+		<ul id="navi2">
 			<li><a href="#">Játék</a></li>
 			<li><a href="#">Regisztráció</a></li>
 		</ul>
