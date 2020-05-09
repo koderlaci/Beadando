@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>HALJATEK</title>
-	<meta http-equiv="Content-Type" content="text/html"; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="public/Style.css" />
 </head>
 <body>
 	<nav id="navigation">
