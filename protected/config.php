@@ -8,8 +8,8 @@ define('USER_MANAGER', PROTECTED_DIR.'userManager.php');
 
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'vgouai');
+define('DB_NAME', 'haldb');
 define('DB_USER', 'root');
-define('DB_PASS', 'haldb');
+define('DB_PASS', '');
 define('DB_CHARSET', 'utf8');
 ?>

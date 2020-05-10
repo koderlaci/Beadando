@@ -1,15 +1,26 @@
-<nav id="nav2">
-	<ul id="navi2">
-		<li><a href="#">Játék</a></li>
-		<li><a href="protected/user/register.php">Regisztráció</a></li>
-	</ul>
-</nav>
+<hr>
 
-<nav id="nav1">
-	<ul id="navi1">
-		<li><a href="index.php">Főoldal</a></li>
-		<li><a href="#">Hírek</a></li>
-		<li><a href="#">Játék</a></li>
-		<li><a href="#">GYIK</a></li>
-	</ul>
-</nav>
+<a href="index.php">Home</a>
+<?php if(!IsUserLoggedIn()) : ?>
+	<span> &nbsp; | &nbsp; </span>
+	<a href="index.php?P=login">Login</a>
+	<span> &nbsp; | &nbsp; </span>
+	<a href="index.php?P=register">Register</a>
+<?php else : ?>
+	<span> &nbsp; | &nbsp; </span>
+	<a href="index.php?P=test">Permission test</a>
+
+	<?php if(isset($_SESSION['permission']) && $_SESSION['permission'] >= 1) : ?>
+		<span> &nbsp; || &nbsp; </span>
+		<a href="index.php?P=users">User list</a>
+		<span> &nbsp; | &nbsp; </span>
+		<a href="index.php?P=add_worker">Add worker</a>
+		<span> &nbsp; || &nbsp; </span>
+	<?php else : ?>
+		<span> &nbsp; | &nbsp; </span>
+	<?php endif; ?>
+
+	<a href="index.php?P=logout">Logout</a>
+<?php endif; ?>
+
+<hr>

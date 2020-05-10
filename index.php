@@ -1,19 +1,19 @@
-<?php
-	$hal = "hal";
-?>
+<?php session_start(); ?>
+<?php require_once 'protected/config.php'; ?>
+<?php require_once USER_MANAGER; ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="public/style.css">
 		<meta charset="utf-8">
 		<title>HAL</title>
+		<link rel="stylesheet" type="text/css" href="<?=PUBLIC_DIR.'style.css?'.date('YmdHis', filemtime(PUBLIC_DIR.'style.css'))?>">
 	</head>
 	<body>
-		<?php include_once "protected/header.php"; ?>
-		<?php require_once "protected/nav.php"; ?>
-		<?php require_once "protected/content.php"; ?>
-		<?php include_once "protected/footer.php"; ?>
-		<?php require_once "protected/config.php"; ?>
-		<?php require_once "protected/database.php"; ?>
+		<div class="container-fluid">
+			<header><?php include_once PROTECTED_DIR.'header.php'; ?></header>
+			<nav><?php require_once PROTECTED_DIR.'nav.php'; ?></nav>
+			<footer><?php include_once PROTECTED_DIR.'footer.php'; ?></footer>
+		</div>
 	</body>
 </html>
