@@ -3,9 +3,9 @@
 <a href="index.php">Főoldal</a>
 <?php if(!IsUserLoggedIn()) : ?>
 	<span> &nbsp; | &nbsp; </span>
-	<a href="protected/user/login.php">Bejelentkezés</a>
+	<a href="index.php?P=login">Bejelentkezés</a>
 	<span> &nbsp; | &nbsp; </span>
-	<a href="protected/user/register.php">Regisztráció</a>
+	<a href="index.php?P=register">Regisztráció</a>
 <?php else : ?>
 	<span> &nbsp; | &nbsp; </span>
 	<a href="index.php?P=test">Jogosultság tesztelése</a>
