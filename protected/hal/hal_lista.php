@@ -32,4 +32,6 @@
 				<?php endforeach;?>
 			</tbody>
 		</table>
+			<a class="btn btn-primary" href="index.php?P=addhal">Hal hozzáadása</a>
+			<a class="btn btn-primary" href="index.php?P=deletehal">Hal törlése</a>
 	<?php endif; ?>
