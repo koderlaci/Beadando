@@ -20,6 +20,8 @@ switch ($_GET['P']) {
 
 	case 'deletehal': IsUserLoggedIn() ? require_once PROTECTED_DIR.'hal/delete_hal.php' : header('Location: index.php'); break;
 
+	case 'updatehal': IsUserLoggedIn() ? require_once PROTECTED_DIR.'hal/update_hal.php' : header('Location: index.php'); break;
+
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
 
