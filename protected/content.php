@@ -14,6 +14,8 @@ switch ($_GET['P']) {
 
 	case 'halak': IsUserLoggedIn() ? require_once PROTECTED_DIR.'hal/hal_lista.php' : header('Location: index.php'); break;
 
+	case 'tap': IsUserLoggedIn() ? require_once PROTECTED_DIR.'tap/tap_lista.php' : header('Location: index.php'); break;
+
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
 
