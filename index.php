@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<?php require_once 'protected/config.php'; ?>
+<?php require_once USER_MANAGER; ?>
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +12,7 @@
 		<div class="container-fluid">
 			<header><?php include_once PROTECTED_DIR.'header.php'; ?></header>
 			<nav><?php require_once PROTECTED_DIR.'nav.php'; ?></nav>
-			<content><?php require_once PROTECTED_DIR.'routing.php'; ?></content>
+			<content><?php require_once PROTECTED_DIR.'content.php'; ?></content>
 			<footer><?php include_once PROTECTED_DIR.'footer.php'; ?></footer>
 	</div>
 	</body>
