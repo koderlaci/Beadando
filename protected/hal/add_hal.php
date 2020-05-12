@@ -1,9 +1,5 @@
-<?php if(!isset($_SESSION['jogosultsag']) || $_SESSION['jogosultsag'] = 0) : ?>
-	<h1>Hozzáférés megtagadva!</h1>
-<?php else : ?>
-
-	<?php
-	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addWorker'])) {
+<?php
+	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addHal'])) {
 		$postData = [
 			'halnev' => $_POST['halnev'],
 			'haltap' => $_POST['haltap'],
@@ -63,6 +59,5 @@
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-primary" name="addWorker">Hal hozzáadása</button>
+		<button type="submit" class="btn btn-primary" name="addHal">Hal hozzáadása</button>
 	</form>
-<?php endif; ?>
