@@ -12,7 +12,7 @@ switch ($_GET['P']) {
 
 	case 'logout': IsUserLoggedIn() ? UserLogout() : header('Location: index.php'); break;
 
-	case 'users': IsUserLoggedIn() ? require_once PROTECTED_DIR.'user/user_list.php' : header('Location: index.php'); break;
+	case 'halak': IsUserLoggedIn() ? require_once PROTECTED_DIR.'hal/hal_lista.php' : header('Location: index.php'); break;
 
 	default: require_once PROTECTED_DIR.'normal/404.php'; break;
 }
